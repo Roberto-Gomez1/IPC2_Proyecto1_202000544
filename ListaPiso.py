@@ -1,3 +1,7 @@
+from ListaPatrones import Listad_Patrones
+from coordenadas import Listad_Coordenadas
+
+
 class pisos:
     def __init__(self, nombre, filas, columnas, voltear, deslizar):
         #self.id = id
@@ -6,12 +10,13 @@ class pisos:
         self.columnas = columnas
         self.voltear = voltear
         self.deslizar = deslizar
+        self.patrones = Listad_Patrones()
+        self.coordenadas =Listad_Coordenadas()
 
 class nodo:
-    def __init__(self,pisos = None, siguiente = None, tamano = 0):
+    def __init__(self,pisos = None, siguiente = None):
         self.pisos = pisos
         self.siguiente= siguiente
-        self.tamano =tamano 
 
 class listaSimple:
     def __init__(self):

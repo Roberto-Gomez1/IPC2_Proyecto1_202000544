@@ -1,11 +1,10 @@
-from coordenadas import Listad_Coordenadas
+
 class nodoDoblemente:
     def __init__(self,codigo = None, patrones=None, siguiente= None, anterior = None):
         self.codigo = codigo
         self.patrones = patrones
         self.siguiente = siguiente
         self.anterior = anterior
-        self.coordenadas = Listad_Coordenadas()
 
 class Listad_Patrones:
     def __init__(self):
