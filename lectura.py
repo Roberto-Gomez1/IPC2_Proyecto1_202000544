@@ -25,13 +25,16 @@ class lectura:
                 codigopatron = aa.attrib['codigo'].replace("\n","")
                 patronletras = aa.text.replace(" ","").replace("\n","")
                 aux_patron =str(patronletras)
+                aux_codigo = str(codigopatron)
                 aux_contador = 0
+                temporal.coordenadas.insertar(nodoDoblementeP(-44,filas1,columnas1,aux_codigo))
                 for x in range(int(filas1)):
                     for y in range(int(columnas1)):
                         nodotemporal2 = nodoDoblementeP(id,x,y,aux_patron[aux_contador])
                         temporal.coordenadas.insertar(nodotemporal2)
                         aux_contador += 1
                 #print('termina el patron')
+                temporal.coordenadas.insertar(nodoDoblementeP(-45,-45,-45,aux_codigo))
                 nodotemporal = nodoDoblemente(codigopatron,patronletras)
                 temporal.patrones.insertar(nodotemporal)
             temporal.coordenadas.recorrer()

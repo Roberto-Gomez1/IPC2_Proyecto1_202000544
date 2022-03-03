@@ -1,0 +1,60 @@
+digraph G { 
+rankdir = LR
+subgraph cod11{ 
+1[label="1",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+2[label="2",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+3[label="3",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+4[label="4",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+5[label="5",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+6[label="6",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+7[label="7",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+8[label="8",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+}
+subgraph cod12{ 
+9[label="9",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+10[label="10",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+11[label="11",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+12[label="12",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+13[label="13",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+14[label="14",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+15[label="15",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+16[label="16",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+}
+
+subgraph cluster_0{
+label="Patron Inicial"
+rankdir=TB
+1->2;
+2->3;
+3->4;
+5->6;
+6->7;
+7->8;
+
+}
+subgraph cluster_1{
+label="Patron Final"
+rankdir=TB
+9->10;
+10->11;
+11->12;
+13->14;
+14->15;
+15->16;
+
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}}
