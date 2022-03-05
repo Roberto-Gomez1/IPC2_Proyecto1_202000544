@@ -120,6 +120,7 @@ class Listad_Coordenadas:
                 aux = aux.siguiente
         graph+="}"
 
+
         documentotxt="GraficaPisos"+str(aux_contador)+".txt"
         with open(documentotxt,'w') as grafica: 
             
