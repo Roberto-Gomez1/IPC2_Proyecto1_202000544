@@ -1,0 +1,44 @@
+digraph G { 
+rankdir = LR
+subgraph zcod31{ 
+1[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+2[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+3[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+4[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+5[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+}
+subgraph wcod32{ 
+6[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+7[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+8[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+9[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+10[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+}
+
+subgraph cluster_0{
+label="Patron Inicial"
+rankdir=TB
+1->2;
+2->3;
+3->4;
+4->5;
+
+}
+subgraph cluster_1{
+label="Patron Final"
+rankdir=TB
+6->7;
+7->8;
+8->9;
+9->10;
+
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}}

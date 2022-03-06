@@ -1,0 +1,64 @@
+digraph G { 
+rankdir = LR
+subgraph ycod21{ 
+1[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+2[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+3[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+4[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+5[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+6[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+7[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+8[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+9[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+}
+subgraph bcod22{ 
+10[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+11[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+12[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+13[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+14[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+15[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+16[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+17[label="W",color = "black",fontcolor ="black",fillcolor="white",style="filled",shape="box"];
+18[label="B",color = "black",fontcolor ="white",fillcolor="black",style="filled",shape="box"];
+}
+
+subgraph cluster_0{
+label="Patron Inicial"
+rankdir=TB
+1->2;
+2->3;
+4->5;
+5->6;
+7->8;
+8->9;
+
+}
+subgraph cluster_1{
+label="Patron Final"
+rankdir=TB
+10->11;
+11->12;
+13->14;
+14->15;
+16->17;
+17->18;
+
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}}

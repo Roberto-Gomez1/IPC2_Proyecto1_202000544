@@ -38,3 +38,21 @@ class listaSimple:
              " Precio voltear: ",actual.pisos.voltear, " Precio deslizar: ", actual.pisos.deslizar)
             actual = actual.siguiente
         
+    def ordenamiento_bubble(self):
+        final = None
+        while final != self.primero.siguiente:
+            a = b = self.primero
+            while b.siguiente != final:
+                cicig = b.siguiente
+                if b.pisos.nombre > cicig.pisos.nombre:
+                    b.siguiente = cicig.siguiente
+                    cicig.siguiente=b
+                    if b != self.primero:
+                        a.siguiente = cicig
+                    else:
+                        self.primero = cicig
+                    b,cicig = cicig,b
+                a = b
+                b = b.siguiente
+            final = b
+            

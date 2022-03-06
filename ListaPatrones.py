@@ -38,6 +38,21 @@ class Listad_Patrones:
                 break
         print(cadena)
 
-
-            
-        
+    def ordenamiento_bubble(self):
+        final = None
+        while final != self.raiz.siguiente:
+            a = b = self.raiz
+            while b.siguiente != final:
+                cicig = b.siguiente
+                if b.codigo > cicig.codigo:
+                    b.siguiente = cicig.siguiente
+                    cicig.siguiente=b
+                    if b != self.raiz:
+                        a.siguiente = cicig
+                    else:
+                        self.raiz = cicig
+                    b,cicig = cicig,b
+                a = b
+                b = b.siguiente
+            final = b
+    

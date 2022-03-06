@@ -70,22 +70,9 @@ class Listad_Coordenadas:
                 elif aux.letra == "W":
                     nombrecolor = "white"
                     colorletra ="black"
-                #for i in range(aux.id):
+                graph += '{}[label="{}",color = "black",fontcolor ="{}",fillcolor="{}",style="filled",shape="box"];\n'.format(aux_contador1,aux.letra,colorletra,nombrecolor)
                 
-                #    if aux_contador< aux_col1:
-                graph += '{}[label="{}",color = "black",fontcolor ="{}",fillcolor="{}",style="filled",shape="box"];\n'.format(aux_contador1,aux_contador1,colorletra,nombrecolor)
-                        #f.write('valor' + str(contG) + '->valor' + str(contG + m) + ';\n')
-                #    elif aux_contador >= aux_col1 and aux_contador <= (aux_col1 * aux_filas1)-1:
-                 #       graph += '{}[label="{}",color = "black",fontcolor ="{}",fillcolor="{}",style="filled",shape="box"];\n'.format(aux_contador1,aux.letra,colorletra,nombrecolor)
-                        #f.write(' valor' + str(contG) + '->valor' + str(contG + m) + ';\n')
-               #     elif aux_contador == (aux_col1 * aux_filas1) - aux_col1:
-                #        break
-
-                    #contG = contG + 1
-                    
                 aux_contador+=1
-                    #graph+='rankdir=UD\n'
-                #graph += '{}<-{};\n'.format(aux.letra,aux.siguiente)
                 aux=aux.siguiente
             
             if str(aux.id) == termina:
@@ -105,7 +92,6 @@ class Listad_Coordenadas:
                 for i in range(aux_contador):
                     if(aux_contador2 == 1 or aux_contador2 == (aux_contador/2)+1):
                         graph += "\nsubgraph cluster_" + str(0 if i==0 else 1)+ "{\nlabel=\""+ ("Patron Inicial" if i==0 else "Patron Final")+ "\"\nrankdir=TB\n"
-
                     if(aux_contador2 == aux_contador/2):
                         graph += "\n}"
                     if aux_contador2%aux_col2 == 0:
