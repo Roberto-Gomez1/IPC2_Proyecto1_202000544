@@ -6,15 +6,16 @@ def main():
     txt_intrucciones = ""
     opcion = Menu()
     lexico_intrucciones = None
-    while opcion != 5 :
+    while opcion != 3 :
         if opcion == 1:
-            #archivo = str(input("Ingrese su opcion:"))
-            archivo ='C:/Users/carlo/Downloads/entrada.xml'
+            archivo = str(input("Ingrese su ruta para el archivo:"))
+            print("se ha cargado la direccion del archivo")
+            #archivo ='C:/Users/carlo/Downloads/entrada.xml'
+            
+        elif opcion == 2:
             metodo=lectura.leer(archivo)
-        #elif opcion == 2:
-        #elif opcion == 3:
-        #elif opcion ==4:
-        #elif opcion == 5:
+            print("Se ha analizado la informacion y creado los nodos")
+        elif opcion == 3:
             print("Terminando el programa...")
         opcion = Menu();
 

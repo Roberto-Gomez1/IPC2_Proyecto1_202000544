@@ -114,4 +114,3 @@ class Listad_Coordenadas:
         pdf="GraficaPisos"+str(aux_contador)+".pdf"
         os.system("dot -Tpdf "+documentotxt+" -o "+pdf)
         webbrowser.open(pdf)
-        #aux_contador +=1

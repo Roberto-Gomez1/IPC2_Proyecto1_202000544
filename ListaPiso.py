@@ -55,4 +55,3 @@ class listaSimple:
                 a = b
                 b = b.siguiente
             final = b
-            

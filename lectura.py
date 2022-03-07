@@ -37,7 +37,7 @@ class lectura:
                 temporal.coordenadas.insertar(nodoDoblementeP(-45,-45,-45,aux_codigo))
                 nodotemporal = nodoDoblemente(codigopatron,patronletras)
                 temporal.patrones.insertar(nodotemporal)
-            #temporal.coordenadas.recorrer()
+            temporal.coordenadas.recorrer()
             print('termina el patron')
             temporal.patrones.ordenamiento_bubble()
             temporal.patrones.recorrer()
